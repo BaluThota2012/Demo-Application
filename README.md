@@ -12,4 +12,6 @@ Demo Application is a Android native application to enrol and display users. The
 #Second Page
   
     Contains text fields for user to enter details like firstname, secondname, date of birth, gender,country,state,home town, phone number and telephone number. It aslo contains a imageview to upload profile photo from the device.
+  Each field is validated by using regular expressions.
   This details are atomatically added to the database and are shown in the users tab once the user is successfully added.
+   
