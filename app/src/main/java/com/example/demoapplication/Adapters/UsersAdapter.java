@@ -71,6 +71,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
 
     private String getAge(String dob) {
 
+        try{
         String[] age =dob.split("/");
         Calendar dob1 = Calendar.getInstance();
         Calendar today = Calendar.getInstance();
@@ -98,6 +99,10 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
 
 
         return ageS;
+        }
+        catch(Exception e){
+            
+            return " ";
     }
 
     @Override
